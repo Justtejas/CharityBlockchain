@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="#">Charity Donation</a>
+            <div class="d-flex" id="account"></div>
+        </div>
+    </nav>
+    <div class="row">
+            <div class="col-md-6">
+                <h2>Make a Donation</h2>
+                <form id="donationForm" >
+                    <div class="mb-3">
+                        <label for="amount" class="form-label">Donation Amount (in Ether)</label>
+                        <input type="number" class="form-control" id="amount" step="0.01" min="0" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="organization" class="form-label">Organization</label>
+                        <input type="text" class="form-control" id="organization" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reason" class="form-label">Reason</label>
+                        <input type="text" class="form-control" id="reason" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Donate</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Total Donations</h2>
+                <div id="totalDonations">
+                    <!-- <button type="submit" id="getTotalDonations"> Get Total Donations</button> -->
+                </div>
+            </div>
+        </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
